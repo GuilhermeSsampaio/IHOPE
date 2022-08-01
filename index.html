@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+        <link rel="shortcut icon" href="img/logo_site.PNG" sizes="48x32" type="image">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+                <link rel="stylesheet" type="text/css" href="css/estilo.css">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+                        <title>Ihope</title>
+</head>
+    <body id="conteudo">
+        
+        <!--Loading-->
+        <div id="loading">
+            <img class="gif" src="img2/5231550.gif">
+            <img class="logo" src="img2/gif-logo.gif">
+        </div>
+
+        <!--Começo dos Produtos / Scroll slider-->
+            <div class="carousel">
+                <div class="carousel-contenedor">
+                    <button aria-label="anterior" class="carousel-seguiente"><i id="seta-produtos" class="fas fa-chevron-left"></i></button>
+
+            <div class="carousel-lista">
+                <div id="lanche" class="carousel-elemento">
+                    <img src="img/lanche.jpg">
+                    <p>Lanches</p>
+                </div>
+
+                <div id="pizza" class="carousel-elemento">
+                    <img src="img/pizza.jpg">
+                    <p>Pizzas</p>
+                </div>
+
+                <div id="pastel" class="carousel-elemento">
+                    <img src="img/pastel.jpg">
+                    <p>Pastel</p>
+                </div>
+
+                <div id="marmita" class="carousel-elemento">
+                    <img src="img/marmita.jpg">
+                    <p>Marmita</p>
+                </div>
+
+                <div id="saudavel" class="carousel-elemento">
+                    <img src="img/saudavel.jpg">
+                    <p>Saudável</p>
+                </div>
+
+                <div id="japonesa" class="carousel-elemento">
+                    <img src="img/japonesa.jpg">
+                    <p>Japonesa</p>
+                </div>
+
+                <div id="cafe" class="carousel-elemento">
+                    <img src="img/cafeterias.jpg">
+                    <p>Cafeterias</p>
+                </div>
+
+                <div id="doces" class="carousel-elemento">
+                    <img src="img/doces.jpg">
+                    <p>Doces e Bolos</p>
+                </div>
+
+                <div id="sorvete" class="carousel-elemento">
+                    <img src="img/sorvete.jpg">
+                    <p>Sorvetes</p>
+                </div>
+
+                <div id="acai" class="carousel-elemento">
+                    <img src="img/acai.jpg">
+                    <p>Açaí</p>
+                </div>
+            </div>
+                    <button aria-label="proximo" class="carousel-proximo"><i id="seta-produtos" class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        <!--Fim dos Produtos / Scroll slider-->
+
+
+        <header>
+            <!--Inicio do Cabeçalho-->
+                <div id="cabecalho">
+                    <!--Inicio do Menu-->
+                    <input type="checkbox" id="check">
+                        <label for="check">
+                            <img onclick="Abrir()" class="menu" src="img/menu.png">
+                        </label>
+
+                    <nav id="fechar">
+                        <ul>
+                            <li><img class="logo-menu" src="img/logo_site.png"></li>
+                                <div class="close-btn" onclick="Closemenu()">
+                                ×</div>
+                            <li><p class="para">Para Você</p></li>
+                                <div id="linha-horizontal"></div>
+                        </ul>
+                        <ul class="ul">
+                            <li><a class="links" href="#">Cadastre sua Empresa <i class="arrow fas fa-chevron-down"></i></a></li>
+                                <div id="linha-horizontal2"></div>
+                            <li><a class="links" href="#">Seja um Entregador <i class="arrow fas fa-chevron-down"></i></a></li>
+                                <div id="linha-horizontal3"></div>
+                            <li><a class="links" href="login.html">Entrar ou Cadastrar</a></li>
+                        </ul>
+                    </nav>
+                    <!--Fim do Menu-->
+
+                    <!--Logo Centralizado-->
+                    <div>
+                        <img class="logo-principal" src="img/logo_site.PNG" alt="logo do ihope">
+                    </div>
+
+                    <!--Inicio do Favoritos-->    
+                    <div>
+                        <a onclick="Abrirpopup()">
+                        <i id="star-fav" class="far fa-star"></i>
+                        <p class="favo">Favoritos</p>
+                        </a>
+                    </div>
+                        <div id="popup" class="popup">
+                            <div class="wrapper">
+                                <div class="title">
+                                    Escolha os seus restaurantes favoritos:
+                                </div>
+                            <div class="container">
+                                <label class="option_item">
+                                    <input type="checkbox" class="checkbox">
+                                        <div class="option_inner gugu">
+                                            <div class="tickmark"></div>
+                                            <div class="icon1"><img class="gugu" src="img/gugu-fav.PNG"></div>
+                                            <div class="linha-vertical"></div>
+                                            <div class="name1">Gugu Lanches</div>
+                                            <div class="star"><i class="fas fa-star"></i><p>4.9</p></div>
+                                        </div>
+                                </label>
+                                <label class="option_item">
+                                    <input type="checkbox" class="checkbox">
+                                        <div class="option_inner bk">
+                                            <div class="tickmark"></div>
+                                            <div class="icon2"><img class="bk" src="img/burger-fav.PNG"></div>
+                                            <div class="linha-vertical"></div>
+                                            <div class="name2">Burger King</div>
+                                            <div class="star"><i class="fas fa-star"></i><p>4.5</p></div>
+                                        </div>
+                                </label>
+                                <label class="option_item">
+                                    <input type="checkbox" class="checkbox">
+                                        <div class="option_inner koni">
+                                            <div class="tickmark"></div>
+                                            <div class="icon3"><img class="koni" src="img/koni-fav.PNG"></div>
+                                            <div class="linha-vertical"></div>
+                                            <div class="name3">Koni</div>
+                                            <div class="star"><i class="fas fa-star"></i><p>4.2</p></div>
+                                      </div>
+                                </label>
+
+                                <a class="ver">Ver Mais <i class="icon-ver fas fa-sort-down"></i></a>
+                                <button class="fechar" onclick="Fecharpopup()">Fechar</button>
+
+                            </div>
+                            </div>          
+                        </div>
+                        <!--Fim do Favoritos-->
+
+                        <!--Inicio do Carrinho-->
+                        <div>
+                            <a>
+                            <i id="cart" class="fas fa-shopping-cart"></i>
+                            <p class="escrita-cart">Carrinho</p>
+                            </a>
+                        </div>
+                        <!--Fim do Carrinho-->
+
+                        <!--Inicio do User-->
+                        <div>
+                            <i id="user" class="fas fa-user"></i>
+                        </div>
+                        <!--Fim do User-->
+                </div>
+            <!--Fim do Cabeçalho-->
+        </header>
+
+        <section>
+            <!--Inicio da Barra de Pesquisa-->
+                <div id="search-box">
+                    <input type="text" class="search-text" name="" placeholder="Busque por um alimento ou restaurante">
+                    <a href="#"><i class="search-btn fas fa-search"></i></a>
+                </div>
+            <!--Fim da Barra de Pesquisa-->
+
+            <!--Inicio das Imagens de Promoção-->
+                <div id="promocoes">
+                    <img class="promo1" src="img/promocoes.png">
+                    <img class="promo2" src="img/Promocoes2.png">
+                </div>
+            <!--Fim das Imagens de Promoção-->
+
+                <div id="linha-horizontal4"></div>
+
+                <!--Titulo-->
+                <div class="title-cadastrados">
+                    <h1>Restaurantes Cadastrados</h1>
+                </div>
+
+                <!--Inicio dos Restaurantes Cadastrados-->
+                <div id="cadastrados">
+                    <div class="restaurantes">
+                        <img id="gugu-res" src="img/gugu-fav.png">
+                        <div class="linha-vertical2"></div>
+                        <div class="name-res">Gugu - Lanches</div>
+                        <div class="star-res"><i class="fas fa-star"></i><p>4.9</p></div>
+                        <div class="endereco-res">Endereço: Av. Weimar Gonçalves Torres, 1476 - Jardim Tropical, Dourados.</div>
+                    </div>
+                </div>
+
+                <div id="cadastrados2">
+                    <div class="restaurantes2">
+                        <img id="bk-res" src="img/burger-fav.png">
+                        <div class="linha-vertical3"></div>
+                        <div class="name-res2">Burger King</div>
+                        <div class="star-res2"><i class="fas fa-star"></i><p>4.5</p></div>
+                        <div class="endereco-res2">Endereço: Av. Rua Hayel Bon Faker, 2952 e Av. Marcelino Píres, 3600, Shopping.</div>
+                    </div>
+                </div>
+
+                <div id="cadastrados3">
+                    <div class="restaurantes3">
+                        <img id="koni-res" src="img/koni-fav.png">
+                        <div class="linha-vertical4"></div>
+                        <div class="name-res3">Koni</div>
+                        <div class="star-res3"><i class="fas fa-star"></i><p>4.2</p></div>
+                        <div class="endereco-res3">Endereço: R. João Rosa Góes, 710 - Jardim America, Dourados.</div>
+                    </div>
+                </div>
+
+                <div id="cadastrados4">
+                    <div class="restaurantes4">
+                        <img id="universidade-res" src="img/universidade.png">
+                        <div class="linha-vertical5"></div>
+                        <div class="name-res4">Universidade da Pizza</div>
+                        <div class="star-res4"><i class="fas fa-star"></i><p>4.8</p></div>
+                        <div class="endereco-res4">Endereço: R. Balbina de Matos, 2121 - Jardim Universitario, Dourados.</div>
+                    </div>
+                </div>
+
+                <div id="cadastrados5">
+                    <div class="restaurantes5">
+                        <img id="subway-res" src="img/subway.png">
+                        <div class="linha-vertical6"></div>
+                        <div class="name-res5">Subway - Centro</div>
+                        <div class="star-res5"><i class="fas fa-star"></i><p>4.6</p></div>
+                        <div class="endereco-res5">Endereço: Av. Weimar Gonçalves Torres, 1960 - Centro, Dourados.</div>
+                    </div>
+                </div>
+
+                <div id="cadastrados6">
+                    <div class="restaurantes6">
+                        <img id="chiquinho-res" src="img/chiquinho.png">
+                        <div class="linha-vertical6"></div>
+                        <div class="name-res6">Chiquinho Sorvetes</div>
+                        <div class="star-res6"><i class="fas fa-star"></i><p>4.7</p></div>
+                        <div class="endereco-res6">Endereço: Av. Marcelino Píres, 3600 - Jardim Paulista, Dourados.</div>
+                    </div>
+                </div>
+
+                <div id="cadastrados7">
+                    <div class="restaurantes7">
+                        <img id="sr-res" src="img/sr.jpg">
+                        <div class="linha-vertical7"></div>
+                        <div class="name-res7">Sr. Açaizeiro</div>
+                        <div class="star-res7"><i class="fas fa-star"></i><p>4.1</p></div>
+                        <div class="endereco-res7">Endereço: Av. Marcelino Píres, 4473 - Vila Sao Francisco, Dourados.</div>
+                    </div>
+                </div>
+
+                <div id="cadastrados8">
+                    <div class="restaurantes8">
+                        <img id="casa-res" src="img/casa.png">
+                        <div class="linha-vertical8"></div>
+                        <div class="name-res8">Casa de Vó</div>
+                        <div class="star-res8"><i class="fas fa-star"></i><p>5.0</p></div>
+                        <div class="endereco-res8">Endereço: Rua Ciro Melo, 2474 - Vila Planalto, Dourados.</div>
+                    </div>
+                </div>
+                <!--Fim dos Restaurantes Cadastrados-->
+        </section>
+
+        <footer>
+            <div id="rodape">
+                <h1 class="titulo-ihope">Ihope</h1>
+                <div id="info-interessante">
+                    <p class="subtitulo-rodape1">Informações interessantes</p>
+                        <p>Quem somos?</p>
+                        <p>Fale conosco</p>
+                        <p>Termos e condições de uso</p>
+                        <p>Privacidade</p>
+                </div>
+
+                <div id="propaganda">
+                    <p class="subtitulo-rodape2">Baixe nosso aplicativo</p>
+                    <a href="#"><img src="img/Google-play.png" alt="imagem da Google play"></a>
+                    <a href="#"><img src="img/App-store.png" alt="imagem da app store"></a>
+                </div>
+
+                <div id="social">
+                    <p class="subtitulo-rodape3">Mídias sociais</p>
+                        <div id="icones-rodape">
+                            <a href="#"><img src="img/face.png" alt="logo do face"></a>
+                            <a href="#"><img src="img/insta.png" alt="logo do insta"></a>
+                            <a href="#"><img src="img/linkedin.png" alt="logo do linkedin"></a>
+                        </div>
+                </div>
+
+                <div id="linha-horizontal-restaurantes"></div>
+
+                <div id="copyright">
+                    <img src="img/logo_site.png" alt="imagem do Ihope">
+                    <p>© Copyright 2021 - Ihope<br>Todos os direitos reservado à Ihope.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script><!--Script para o Scroll-->
+        <script type="text/javascript" src="js/script.js"></script><!--Script principal do projeto-->
+    </body>
+</html>
